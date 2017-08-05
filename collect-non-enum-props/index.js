@@ -1,15 +1,14 @@
 var CONSTRUCTOR = 'constructor';
-var has = require('object/has');
-var contains = require('array/contains');
+var has = require('../has');
 var isFunction = require('@timelaps/is/function');
-var nonEnumerableProps = require('object/non-enumerable-props');
+var nonEnumerableProps = require('../non-enumerable-props');
 module.exports = function (obj, keys) {
     var nonEnumIdx = nonEnumerableProps.length;
     var constructor = obj[CONSTRUCTOR];
     var proto = (isFunction(constructor) && constructor.prototype) || ObjProto;
     // Constructor is a special case.
     var prop = CONSTRUCTOR;
-    if (has(obj, prop) && !contains(keys, prop)) {
+    if (has(obj, prop) && keys.indexOf(prop) === -1) {
         keys.push(prop);
     }
     while (nonEnumIdx--) {

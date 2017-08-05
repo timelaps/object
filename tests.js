@@ -1,11 +1,9 @@
-require('./access/index.test');
 require('./assign/index.test');
 require('./collect-non-enum-props/index.test');
 require('./create/index.test');
-require('./for/in-right/index.test');
 require('./for/in/index.test');
-require('./for/own-right/index.test');
 require('./for/own/index.test');
+require('./get/index.test');
 require('./has/index.test');
 require('./invert/index.test');
 require('./keys/all/index.test');

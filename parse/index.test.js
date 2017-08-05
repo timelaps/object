@@ -16,7 +16,7 @@ b.describe('parse', function () {
             a: 1
         });
     }, 2);
-    b.it('will create a function if it can', function (t) {
-        t.expect(parse('function (){}')).toBeFunction();
+    b.it('will not create a function if it can', function (t) {
+        t.expect(parse('function (){}')).toBe('function (){}');
     });
 });

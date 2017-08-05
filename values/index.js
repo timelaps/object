@@ -1,8 +1,9 @@
 module.exports = values;
-var forOwn = require('object/for/own');
-var passesFirstArgument = require('passes/first');
-var bindTo = require('function/bind');
+var forOwn = require('../for/own');
+var passesFirstArgument = require('@timelaps/fn/first');
+var bindTo = require('@timelaps/fn/bind/to');
 var push = [].push;
+
 function values(object) {
     var collected = [];
     forOwn(object, passesFirstArgument(bindTo(push, collected)));

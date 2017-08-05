@@ -1,9 +1,9 @@
-var checkCollectNonEnumProps = require('object/collect-non-enum-props/check');
-var forloop = require('object/base/for');
+var checkCollectNonEnumProps = require('../../collect-non-enum-props/check');
+var forIn = require('../../for/in');
+var second = require('@timelaps/fn/second');
+var bindTo = require('@timelaps/fn/bind/to');
 module.exports = function (obj) {
     var keys = [];
-    forloop(obj, function (key) {
-        keys.push(key);
-    });
+    forIn(obj, second(bindTo(keys.push, keys)));
     return checkCollectNonEnumProps(obj, keys);
 };

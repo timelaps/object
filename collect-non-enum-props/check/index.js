@@ -1,5 +1,5 @@
-var ENUM_BUG = require('object/keys/enum-bug');
-var collectNonEnumProps = require('object/collect-non-enum-props');
+var ENUM_BUG = require('../../keys/enum-bug');
+var collectNonEnumProps = require('../');
 module.exports = check;
 
 function check(obj, keys) {

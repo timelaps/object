@@ -1,1 +1,5 @@
-module.exports = require('array/base/each')(require('iterate/in'), require('array/for/each'));
+module.exports = function forIn(object, fn) {
+    for (var n in object) {
+        fn(object[n], n, object);
+    }
+};

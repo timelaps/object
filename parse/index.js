@@ -1,13 +1,12 @@
 module.exports = parse;
 var isNotNan = require('@timelaps/is/not-nan');
 var isString = require('@timelaps/is/string');
-var wraptry = require('function/wrap-try');
+var wraptry = require('@timelaps/fn/wrap-try');
 var couldBeJSON = require('@timelaps/json/could-be');
 var JSONParse = require('@timelaps/json/parse');
 var toNumber = require('@timelaps/hacks/to-number');
-var has = require('object/has');
+var has = require('../has');
 var TYPES = require('@timelaps/constants/base-types');
-var evaluate = require('function/evaluate');
 
 function parse(val_) {
     var valTrimmed, valLength, coerced, val = val_;
@@ -35,9 +34,6 @@ function parse(val_) {
             })) !== valTrimmed) {
             return val;
         }
-    }
-    if (val.slice(0, 8) === 'function' && val[val.length - 1] === '}') {
-        return evaluate('return ' + val);
     }
     return val;
 }
