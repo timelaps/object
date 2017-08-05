@@ -9,6 +9,7 @@ require('./has/index.test');
 require('./invert/index.test');
 require('./keys/all/index.test');
 require('./keys/enum-bug/index.test');
+require('./keys/generator/index.test');
 require('./keys/index.test');
 require('./keys/native/index.test');
 require('./keys/own/index.test');
