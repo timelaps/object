@@ -1,10 +1,7 @@
-// module.exports = require('array/base/each')(require('iterate/own'), require('array/for/each'));
-var forIn = require('../in');
-var has = require('../../has');
+var forEach = require('../each');
+var keys = require('../../keys');
 module.exports = function forOwn(object, fn) {
-    forIn(object, function (value, key) {
-        if (has(object, key)) {
-            fn(value, key, object);
-        }
+    forEach(keys(object), function (key) {
+        fn(object[key], key, object);
     });
 };

@@ -1,6 +1,7 @@
 require('./assign/index.test');
 require('./collect-non-enum-props/index.test');
 require('./create/index.test');
+require('./for/in/has/index.test');
 require('./for/in/index.test');
 require('./for/own/index.test');
 require('./get/index.test');

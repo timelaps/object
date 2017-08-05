@@ -1,6 +1,6 @@
 var has = require('../../has');
 var checkCollectNonEnumProps = require('../../collect-non-enum-props/check');
-var forOwn = require('../../for/own');
+var forOwn = require('../../for/in/has');
 var native = require('../../keys/native');
 var isObject = require('@timelaps/is/object');
 var second = require('@timelaps/fn/second');
