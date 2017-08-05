@@ -3,16 +3,13 @@ var keys = require('../keys');
 var toObject = require('@timelaps/to/object');
 var forEachEnd = require('../for/each/end');
 var toBoolean = require('@timelaps/hacks/to-boolean');
+var isEqual = require('@timelaps/is/equal');
 
 function match(object, attrs, extent_) {
-    var extent = extent_ || defaultExtent,
+    var extent = extent_ || isEqual,
         keysResult = keys(attrs),
         obj = toObject(object);
     return !toBoolean(forEachEnd(keysResult, function iterates(key) {
         return !extent(attrs[key], obj[key]);
     }) + 1);
-}
-
-function defaultExtent(a, b) {
-    return a === b;
 }
