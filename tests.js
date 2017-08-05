@@ -12,6 +12,7 @@ require('./keys/enum-bug/index.test');
 require('./keys/index.test');
 require('./keys/native/index.test');
 require('./keys/own/index.test');
+require('./match/index.test');
 require('./non-enumerable-props/index.test');
 require('./parse/index.test');
 require('./property/index.test');
