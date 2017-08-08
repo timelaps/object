@@ -23,6 +23,7 @@ require('./matches/property/index.test');
 require('./non-enumerable-props/index.test');
 require('./parse/index.test');
 require('./property/index.test');
+require('./property/of/index.test');
 require('./stringify/index.test');
 require('./toggle/index.test');
 require('./values/index.test');
