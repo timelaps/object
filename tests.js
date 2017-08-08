@@ -20,7 +20,6 @@ require('./matches/binary/index.test');
 require('./matches/index.test');
 require('./matches/object/index.test');
 require('./matches/property/index.test');
-require('./non-enumerable-props/index.test');
 require('./parse/index.test');
 require('./property/index.test');
 require('./property/of/index.test');

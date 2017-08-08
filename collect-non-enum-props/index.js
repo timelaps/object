@@ -1,7 +1,7 @@
 var CONSTRUCTOR = 'constructor';
 var has = require('../has');
 var isFunction = require('@timelaps/is/function');
-var nonEnumerableProps = require('../non-enumerable-props');
+var nonEnumerableProps = require('@timelaps/constants/non-enumerables');
 module.exports = function (obj, keys) {
     var nonEnumIdx = nonEnumerableProps.length;
     var constructor = obj[CONSTRUCTOR];
