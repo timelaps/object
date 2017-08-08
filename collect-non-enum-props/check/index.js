@@ -1,4 +1,4 @@
-var ENUM_BUG = require('../../keys/enum-bug');
+var ENUM_BUG = require('@timelaps/constants/enum-bug');
 var collectNonEnumProps = require('../');
 module.exports = check;
 
