@@ -1,6 +1,7 @@
 require('./assign/index.test');
 require('./create/from/index.test');
 require('./create/index.test');
+require('./each/base/index.test');
 require('./empty/index.test');
 require('./index.test');
 require('./invert/index.test');
