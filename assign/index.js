@@ -1,4 +1,4 @@
-var forOwn = require('../for/own');
+var forOwn = require('@timelaps/n/for/own');
 module.exports = Object.assign || assign;
 
 function assign(obj1, obj2) {

@@ -1,11 +1,8 @@
-var keys = require('../keys');
+var forOwn = require('@timelaps/n/for/own');
 module.exports = function (obj) {
-    var i = 0,
-        result = {},
-        objKeys = keys(obj),
-        length = objKeys.length;
-    for (; i < length; i++) {
-        result[obj[objKeys[i]]] = objKeys[i];
-    }
+    var result = {};
+    forOwn(obj, function (value, key) {
+        result[value] = key;
+    });
     return result;
 };

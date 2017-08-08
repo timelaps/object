@@ -1,5 +1,5 @@
 module.exports = property;
-var get = require('../../get');
+var get = require('@timelaps/n/get');
 var isEqual = require('@timelaps/is/equal');
 
 function property(pair, extent_) {

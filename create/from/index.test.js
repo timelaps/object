@@ -1,6 +1,5 @@
 var b = require('@timelaps/batterie');
 var createFrom = require('.');
-var has = require('../../has');
 b.describe('createFrom', function () {
     b.expect(createFrom).toBeFunction();
     b.it('creates new object prototypes', function (t) {

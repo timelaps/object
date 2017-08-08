@@ -1,4 +1,4 @@
-var forOwn = require('../for/own');
+var forOwn = require('@timelaps/n/for/own');
 var passesFirstArgument = require('@timelaps/fn/first');
 var bindTo = require('@timelaps/fn/bind/to');
 var push = [].push;

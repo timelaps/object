@@ -5,7 +5,7 @@ var wraptry = require('@timelaps/fn/wrap-try');
 var couldBeJSON = require('@timelaps/json/could-be');
 var JSONParse = require('@timelaps/json/parse');
 var toNumber = require('@timelaps/hacks/to-number');
-var has = require('../has');
+var has = require('@timelaps/n/has/shallow');
 var TYPES = require('@timelaps/constants/base-types');
 
 function parse(val_) {

@@ -1,7 +1,7 @@
 module.exports = match;
-var keys = require('../keys');
+var keys = require('@timelaps/n/keys');
 var toObject = require('@timelaps/to/object');
-var forEachEnd = require('../for/each/end');
+var forEachEnd = require('@timelaps/n/for/each/end');
 var toBoolean = require('@timelaps/hacks/to-boolean');
 var isEqual = require('@timelaps/is/equal');
 
