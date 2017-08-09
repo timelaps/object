@@ -1,4 +1,5 @@
 require('./assign/index.test');
+require('./clone/index.test');
 require('./create/from/index.test');
 require('./create/index.test');
 require('./each/base/index.test');
