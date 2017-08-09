@@ -3,7 +3,7 @@ var b = require('@timelaps/batterie');
 b.describe('extend', function () {
     var first, second;
     b.expect(extend).toBeFunction();
-    b.expect(extend()).toBeUndefined();
+    b.expect(extend()).toEqual({});
     b.expect(extend([])).toBeObject();
     first = {};
     b.expect(extend([first])).toBe(first);
