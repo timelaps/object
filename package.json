@@ -20,12 +20,12 @@
   "homepage": "https://github.com/timelaps/object#readme",
   "dependencies": {
     "@timelaps/constants": "^1.0.5",
-    "@timelaps/fn": "^1.0.0",
-    "@timelaps/is": "^1.0.6",
-    "@timelaps/json": "^1.0.2",
-    "@timelaps/n": "^1.0.16"
+    "@timelaps/fn": "^1.0.11",
+    "@timelaps/is": "^1.0.13",
+    "@timelaps/json": "^1.0.4",
+    "@timelaps/n": "^1.0.25"
   },
   "devDependencies": {
-    "@timelaps/batterie": "^1.0.71"
+    "@timelaps/batterie": "^1.0.73"
   }
 }
