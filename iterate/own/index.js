@@ -1,1 +1,1 @@
-module.exports = require('..')(require('@timelaps/n/keys'));
+module.exports = require('../')(require('@timelaps/n/keys'));

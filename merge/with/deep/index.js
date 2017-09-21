@@ -1,7 +1,7 @@
 var isObject = require('@timelaps/is/object');
 var contains = require('@timelaps/n/contains');
 var returnBaseType = require('@timelaps/returns/base-type');
-var mergeWith = require('..');
+var mergeWith = require('../');
 var isUndefined = require('@timelaps/is/undefined');
 var isStrictlyEqual = require('@timelaps/is/strictly-equal');
 module.exports = deepMergeWithCustomizer;
