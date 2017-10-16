@@ -9,7 +9,7 @@ module.exports = deepMergeWithCustomizer;
 function deepMergeWithCustomizer(val1, val2, key, o1, o2, stack) {
     var result, garbage;
     if (isObject(val2)) {
-        if (!contains(stack, val2)) {
+        if (!contains(null, stack, val2)) {
             stack.push(val2);
             if (!isObject(val1)) {
                 val1 = returnBaseType(val2);

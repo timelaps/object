@@ -21,5 +21,6 @@ require('./merge/with/shallow/index.test');
 require('./parse/index.test');
 require('./property/index.test');
 require('./property/of/index.test');
+require('./reduce/index.test');
 require('./stringify/index.test');
 require('./toggle/index.test');
