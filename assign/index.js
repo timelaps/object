@@ -9,5 +9,5 @@ function assign(obj1, obj2) {
             memo[key] = value;
         });
         return memo;
-    }, obj1, 1, args.length);
+    }, obj1, 1, args.length, 1);
 }
