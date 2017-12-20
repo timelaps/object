@@ -4,7 +4,7 @@ module.exports = Object.assign || assign;
 
 function assign(obj1, obj2) {
     var args = arguments;
-    return fromTo(function (memo, index) {
+    return fromTo(function (index, memo) {
         forOwn(args[index], function (value, key) {
             memo[key] = value;
         });
